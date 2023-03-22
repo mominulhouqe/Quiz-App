@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body  class="container bg-light container-fluid">
+
+
+    <header>
+        <h1 class="fw-bold text-center mt-5 mb-5">Welcome My Blog Post !!!</h1>
+    </header>
+    <main>
+        <section>
+            <h5 class=" fw-bolder text-decoration-underline">Question : 1 -> What is Map,filter,forEach,Find between differance ?</h5>
+            <h6><span class="text-decoration-underline">Answer : </span>    Map, filter, forEach, and find are all array methods in JavaScript that allow you to perform operations on arrays. The main differences between them are: 
+                
+                               <p class="mx-4"> <br> 1. Map: The map() method creates a new array by calling a function on each element of the original array. The function can perform any transformation on the original element and return a new value. The resulting values are then added to the new array in the same order as the original array. The original array is not modified</p>
+                               <br> 
+                               <p>Example: const numbers = [1, 2, 3, 4]; <br>
+                                const doubled = numbers.map(num => num * 2);</p>
+                            
+                
+                               <p class="mx-4"> <br> 2.Filter: The filter() method creates a new array by calling a function on each element of the original array. The function should return a boolean value (true or false) to indicate whether the element should be included in the resulting array. If the function returns true, the element is included, otherwise it is excluded. The original array is not modified.
+                                </p>
+                               <br> 
+                               <p>Example: const numbers = [1, 2, 3, 4]; <br>  const evenNumbers = numbers.filter(num => num % 2 === 0);</p>
+                            
+                               <p class="mx-4"> <br> 3.forEach: The forEach() method calls a function on each element of the original array. The function can perform any operation on the element, but it doesn't return anything. The original array is not modified.
+                                </p>
+                               <br> 
+                               <p>Example: const numbers = [1, 2, 3, 4];
+                                numbers.forEach(num => console.log(num * 2));;</p>
+                            
+
+                               <p class="mx-4"> <br> 4.Find: The find() method returns the first element in the array that satisfies a given condition. The condition is defined by a function that is called on each element of the array. If the function returns true for an element, that element is returned. Otherwise, undefined is returned.
+
+                                </p>
+                               <br> 
+                               <p>Example: const numbers = [1, 2, 3, 4];
+const found = numbers.find(num => num > 2);</p>
+                            
+            </h6>
+
+        </section>
+        
+        
+        <section>
+            <h5 class=" fw-bolder text-decoration-underline">Question : 2 -> What is LocalStorage, Session storage, cookies between differencee ?</h5>
+            
+            <h6><span class="text-decoration-underline">Answer :</span>
+                LocalStorage and Session Storage are storage mechanisms in web browsers that allow web pages to store data locally on a user's device, <br> <br>
+                while cookies are small text files that are stored on a user's device by a website. <br> <br>
+
+                 LocalStorage has a larger storage limit than cookies and persists even after the browser is closed, while Session Storage is only available during the current session. Cookies have a smaller storage limit than LocalStorage, but they can be set to expire after a specified time. 
+            </h6>
+        </section>
+
+        <section>
+            <h5 class=" fw-bolder text-decoration-underline">Question : 3 -> What is 
+                what is Event Loop ?</h5>
+            
+            <h6><span class="text-decoration-underline">Answer :</span>
+                The Event Loop is a mechanism in JavaScript that allows it to handle multiple tasks simultaneously without blocking the execution of other code. It is the core of JavaScript's concurrency model and is responsible for handling all asynchronous code in JavaScript.
+<br> <br> 
+                In JavaScript, all code runs in a single thread, which means that only one task can be executed at a time. This can be a problem for applications that need to handle multiple tasks simultaneously, such as responding to user input while downloading data from a server. The Event Loop helps solve this problem by allowing asynchronous tasks to be executed without blocking the main thread.
+            </h6>
+        </section>
+
+        <section>
+            <h5 class=" fw-bolder text-decoration-underline">Question : 4 -> What is the differance between two function QuizTimer & chooseQuiz  ?</h5>
+            
+            <h6><span class="text-decoration-underline">Answer :</span>
+                <p class="mx-4"><span class="fw-bold text-decoration-underline">QuizTimer() : </span> The code provided is a function in the programming language JavaScript that creates a timer to be displayed on a website. It takes one argument, called dismiss, which is used to stop the timer when it is set to true.
+<br> <br>
+                    The function checks the dismiss argument. If it is true, the timer is stopped, and the function ends. If it is not true, the timer is set to run every second.
+                   <br> 
+                    The function does several things when the timer runs, including updating the website with the current time, changing the color of the timer every minute, and counting the number of seconds that have passed.
+                  .</p>
+
+                  <p class="mx-4"><span class="fw-bold text-decoration-underline">chooseQuiz(): </span>  The provided code is a function in the programming language JavaScript called chooseQuiz. It accepts two arguments: index, which is a number, and givenAns, which could be any value.
+<br>
+                    The function is designed to update an array called answers with a new object containing the quiz's ID and the user's answer. If the ID already exists in the answers array, the function replaces the existing object with a new object containing the updated answer. If the ID is not found, the function creates a new object with the given answer and adds it to the answers array.
+                    <br>
+                    Lastly, the function calls another function called displayAnswers to display the updated answers array on the webpa</p>
+            </h6>
+        </section>
+    </main>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
